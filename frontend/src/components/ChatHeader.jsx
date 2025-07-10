@@ -4,7 +4,8 @@ import {useAuthStore} from "../store/useAuthStore"
 import {X} from "lucide-react"
 
 const ChatHeader = () => {
-    const {selectedUser,setSelectedUser,onlineUsers}=useChatStore()
+    const {selectedUser,setSelectedUser}=useChatStore()
+    const{onlineUsers}=useAuthStore()
     // const{}=useAuthStore()
   return (
     <div className='p-2.5 border-b border-base-300'>
